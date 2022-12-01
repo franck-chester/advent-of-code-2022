@@ -4,6 +4,8 @@ const path = require('path')
 const input = './test.txt';
 //const input = './input.txt';
 
+const elves = new int[];
+
 
 function lineParser() {
     return (line) => {
