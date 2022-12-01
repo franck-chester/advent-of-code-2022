@@ -4,7 +4,6 @@ const path = require('path')
 const input = './test.txt';
 //const input = './input.txt';
 
-
 function lineParser() {
     return (line) => {
         return line; // TODO implement parser
