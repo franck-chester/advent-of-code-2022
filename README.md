@@ -17,4 +17,6 @@ AoC from my phone
 
 ## Day 2: 
 
-...
+Lazy but yet clever approach I'd say - encode the rules rather than calculate them
+
+
