@@ -19,4 +19,9 @@ AoC from my phone
 
 Lazy but yet clever approach I'd say - encode the rules rather than calculate them
 
+## Day 3:
 
+It's official, I can't remember how to code anymore. 
+Struggled with a variable / function name clash, then whether to use `i+=3` or `i=+3` to step through the list
+
+Code left raw, to show how bad things are right now
