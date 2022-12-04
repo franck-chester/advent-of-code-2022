@@ -11,12 +11,12 @@ function lineParser() {
 };
 
 
-function includes(p1, p2){    
+function includesAllOf(p1, p2){    
     return (parseInt(p1[0]) >= parseInt(p2[0])) && (parseInt(p1[1]) <= parseInt(p2[1]) ) 
 }
 
 function overlaps(p1,p2){
-    return includes (p1,p2) || includes (p2,p1);
+    return includesAllOf (p1,p2) || includesAllOf (p2,p1);
 }
 
 async function main() {
@@ -31,7 +31,7 @@ async function main() {
             p2 = pairs[1].split('-');
             overlap = overlaps(p1, p2); 
             totalScore += overlap? 1 : 0;
-            if(overlap) console.log(`entry= ${entry}, p1 = ${p1}, p2 = ${p2}, overlap = ${overlap} , includes (${p1},${p2}) = ${includes (p1,p2)} includes (${p2},${p1}) = ${includes (p2,p1)} `);
+            if(overlap) console.log(`entry= ${entry}, p1 = ${p1}, p2 = ${p2}, overlap = ${overlap} , includes (${p1},${p2}) = ${includesAllOf (p1,p2)} includes (${p2},${p1}) = ${includesAllOf (p2,p1)} `);
         }
         console.log(`total= ${totalScore}`);
     }
