@@ -3,6 +3,17 @@ My 2022 attempt at the https://adventofcode.com/ challenge.
 
 Competing against my colleagues at the very group, although this year I doubt I'll have sufficient time or head space to have a proper go.
 
+## Typescript setup
+
+I always forget how to get there so, for the record
+```
+npm i typescript --save-dev 
+npm i --save-dev @types/node
+npm i --location=global ts-node
+npx tsc --init
+
+ts-node index.ts
+```
 
 ## Day 1: 
 
