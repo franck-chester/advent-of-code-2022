@@ -25,3 +25,9 @@ It's official, I can't remember how to code anymore.
 Struggled with a variable / function name clash, then whether to use `i+=3` or `i=+3` to step through the list
 
 Code left raw, to show how bad things are right now
+
+## Day 4:
+
+Still a struggle, at least today introduced functions and thanks to breaking them up part 2 was a very simple change.
+
+but tripped on `ParseInt()`, missing it like every year
