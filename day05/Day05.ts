@@ -95,7 +95,7 @@ export class Day05 extends Day {
         }
     }
 
-    private parseCrates(entry: string, stacks: string[][]) {
+    private parseCrates(entry: string, stacks: string[][]): string[][] {
         const regexCrates = /(\[\w\]|\s{3})\s?/gm;
         let matches = entry.match(regexCrates);
         console.log(`REGEX MATCH : ${matches}`);
@@ -110,10 +110,11 @@ export class Day05 extends Day {
                 console.log(`no crate on stack ${s}`);
             }
         }
+        return stacks;
     }
 
     private parseInstructions(entry: string) {
-        const regexMoves = /move (?<move>\d+) from (?<from>\d) to (?<to>\d)/gm;
+        const regexMoves = /move (?<move>\d+) from (?<from>\d+) to (?<to>\d+)/gm;
         let match = entry.matchAll(regexMoves).next();
         let instructions = {
             moveCount: parseInt(match.value.groups.move),

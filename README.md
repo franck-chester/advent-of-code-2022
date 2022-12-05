@@ -13,9 +13,17 @@ npm i --location=global ts-node
 npm i ts-node --save-dev
 npx tsc --init
 
-ts-node index.ts
+npm i --save-dev ts-jest
+npm i --save-dev @jest/globals
+
+npx ts-jest config:init
+
+ts-node aoc2022.ts 5 1 
+
+npm test -- day00/Day00.test.ts
 ```
 
+[ts-jest](https://jestjs.io/docs/getting-started)
 ## Day 1: 
 
 Easy enough but it's been so long since I last coded I couldn't even remember how to find the max value in my array.
