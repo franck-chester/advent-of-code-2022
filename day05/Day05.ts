@@ -11,37 +11,78 @@ export class Day05 extends Day {
     part1(entries : string[]): string {
         let solution = "????"
         let mode : "crateProcessing"|"moveProcessing" = "crateProcessing";
-        let stacks : string[][] = [[]];
+        const regexCrates = /(\[\w\]|\s{3})\s?/gm;
+            const regexMoves = /move (\d{1,2}) from (\d) to (\d)/gm;
+
+        let stacks : string[][] = [[],[],[],[],[],[],[],[],[]];
         for (let i = 0; i < entries.length; i++) {
             let entry = entries[i];
 
             if(entry.startsWith(" 1")){
-                stacks.splice(0,1) ; // have an empty row in there
-                for(let s=0; s< stacks.length; s++){
-                    console.log(` ${stacks[s].join(' ')}`);
-                }
-                console.log(entries[i].split('   ').join(' '));
+
+                this.logStacks(stacks);
+                
                 i+=2;
                 entry = entries[i];
                 mode = "moveProcessing" ;
                 console.log(`MODE : ${mode}`);
-
                 
             }
 
-            const regex = /(\[\w\]|\s{3})/gm;
             if(mode == "crateProcessing"){
              
-                let matches = entry.match(regex);
+                let matches = entry.match(regexCrates);
                 console.log(`REGEX MATCH : ${matches}`);
                 let crates = matches!.map(m => m.charAt(1));
+                for(let s = 0; s< stacks.length; s++){
+                    
+                    if(crates[s] != ' '){
+                        console.log(`add : ${crates[s]} to stack ${s}`);
+                        stacks[s].unshift(crates[s]);
+                    }
+                    else{
+                        console.log(`no crate on stack ${s}`);
+                    }
+                }
+
+            }
+
+            if(mode == "moveProcessing"){
                 
-                stacks.push(crates);
+                // I have no idea what I am doing here
+                let matches = Array.from(entry.matchAll(regexMoves), (m) => [m[1],m[2],m[3]]);
+                //console.log(`${entry} -- REGEX MATCH : ${matches}`);
+                let moveCount = parseInt(matches[0][0]);
+                let moveFrom = parseInt(matches[0][1])-1;
+                let moveTo = parseInt(matches[0][2])-1;
+
+                console.log(`REGEX MATCH : ${matches} : move ${moveCount} from ${moveFrom} to ${moveTo}`);
+
+                for(let j = 0; j<moveCount; j++){
+                    let crate = stacks[moveFrom].pop();
+                    if(crate){
+                        stacks[moveTo].push(crate);
+                    }
+                }
+                this.logStacks(stacks);
+                
             }
             
         }
-        return `${solution}`;
+        let sol : string[] = [];
+        for (let s = 0; s < stacks.length; s++) {
+            let c = stacks[s].pop();
+            if(c) sol.push(c);
+        }
+        console.log(`solution = ${sol}`);
+        return `${sol.join('')}`;
     };
+
+    private logStacks(stacks: string[][]) {
+        for (let s = 0; s < stacks.length; s++) {
+            console.log(`${s} ${stacks[s].join('|')}`);
+        }
+    }
 
     part2(entries : string[]): string {
         let solution = "????"

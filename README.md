@@ -10,6 +10,7 @@ I always forget how to get there so, for the record
 npm i typescript --save-dev 
 npm i --save-dev @types/node
 npm i --location=global ts-node
+npm i ts-node --save-dev
 npx tsc --init
 
 ts-node index.ts
