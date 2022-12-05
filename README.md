@@ -43,3 +43,9 @@ Code left raw, to show how bad things are right now
 Still a struggle, at least today introduced functions and thanks to breaking them up part 2 was a very simple change.
 
 but tripped on `ParseInt()`, missing it like every year
+
+## Day 5:
+
+Yesterday refactored everything so far to Typescript.
+Today struggled with types and RegExp
+Then forgot a `\s` and my stacks were wrong
