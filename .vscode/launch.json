@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Current TS File",
+            "name": "Day 5 part 2",
             "type": "node",
             "request": "launch",
-            "args": ["aoc2022.ts", "5", "1"],
+            "args": ["aoc2022.ts", "5", "2"],
             "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
             "sourceMaps": true,
             "cwd": "${workspaceRoot}",
