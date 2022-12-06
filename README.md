@@ -57,3 +57,8 @@ but tripped on `ParseInt()`, missing it like every year
 Yesterday refactored everything so far to Typescript.
 Today struggled with types and RegExp
 Then forgot a `\s` and my stacks were wrong
+
+## Day 6:
+
+A few silly mistakes around `substring()`, but all in all an easy challenge, perfect for my having a go a test driven development.
+

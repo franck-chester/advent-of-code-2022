@@ -17,8 +17,9 @@ export class Day06 extends Day {
 
     part1(entries : string[]): string {
         let entry = entries[0];
-        let i = 4
-        while(this.repeats(entry.substring(i-4,i)) && (i<entry.length -1)){
+        const groupSize = 4
+        let i = groupSize
+        while(this.repeats(entry.substring(i-groupSize,i)) && (i<entry.length -1)){
             i++
         }
         return `${i}`;
@@ -26,8 +27,9 @@ export class Day06 extends Day {
 
     part2(entries : string[]): string {
         let entry = entries[0];
-        let i = 14
-        while(this.repeats(entry.substring(i-14,i)) && (i<entry.length -1)){
+        const groupSize = 14
+        let i = groupSize
+        while(this.repeats(entry.substring(i-groupSize,i)) && (i<entry.length -1)){
             i++
         }
         return `${i}`;
