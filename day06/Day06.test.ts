@@ -13,6 +13,6 @@ test("part 1 - zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw", () => expect(day.part1(["zcfzf
 
 test("part 2 - mjqjpqmgbljsphdztnvjfqwrcgsmlb", () => expect(day.part2(["mjqjpqmgbljsphdztnvjfqwrcgsmlb"])).toBe("19"));
 test("part 2 - bvwbjplbgvbhsrlpgdmjqwftvncz", () => expect(day.part2(["bvwbjplbgvbhsrlpgdmjqwftvncz"])).toBe("23"));
-test("part 2 - nppdvjthqldpwncqszvftbrmjlhg", () => expect(day.part2(["nppdvjthqldpwncqszvftbrmjlhg"])).toBe("19"));
-test("part 2 - nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg", () => expect(day.part2(["nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg"])).toBe("19"));
-test("part 2 - zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw", () => expect(day.part2(["zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw"])).toBe("19"));
+test("part 2 - nppdvjthqldpwncqszvftbrmjlhg", () => expect(day.part2(["nppdvjthqldpwncqszvftbrmjlhg"])).toBe("23"));
+test("part 2 - nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg", () => expect(day.part2(["nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg"])).toBe("29"));
+test("part 2 - zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw", () => expect(day.part2(["zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw"])).toBe("26"));
