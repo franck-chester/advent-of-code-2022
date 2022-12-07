@@ -9,7 +9,7 @@ export class Day00 extends Day {
     }
 
     part1(entries : string[]): string {
-        let solution = "????"
+        let solution = "???"
         for (let i = 0; i < entries.length; i++) {
             console.log(`entry = ${entries[i]}`);
         }
@@ -17,7 +17,7 @@ export class Day00 extends Day {
     };
 
     part2(entries : string[]): string {
-        let solution = "????"
+        let solution = "???"
         for (let i = 0; i < entries.length; i++) {
             console.log(`entry = ${entries[i]}`);
         }
