@@ -62,3 +62,11 @@ Then forgot a `\s` and my stacks were wrong
 
 A few silly mistakes around `substring()`, but all in all an easy challenge, perfect for my having a go a test driven development.
 
+## Day 7:
+
+Not particularly difficult but I made a hash of it.
+Issues around 'smallest', and what size I was comparing against.
+
+My tree traversal techniques also found lacking
+
+Not sure how I'd TDD this - need to have a go
