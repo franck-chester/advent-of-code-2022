@@ -56,4 +56,10 @@ export abstract class Day {
         return processedLines;
     }
 
+    parseEntry(entry: string, regex : RegExp):Record<string,string>{
+        let match = regex.exec(entry);
+         return {};
+    }
+    
+
 }
