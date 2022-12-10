@@ -70,3 +70,17 @@ Issues around 'smallest', and what size I was comparing against.
 My tree traversal techniques also found lacking
 
 Not sure how I'd TDD this - need to have a go
+
+## Day 8 :
+
+Day of the xmas do, didn't have much time, and got my knickers in a twist.
+Part 2 not done at this stage
+
+## day 9:
+
+Day after the xmas do - too hungover
+Part 2 not done at this stage
+
+## Day 10:
+
+A snowy weekend, not muchh time to spend on it but figured it out in the end
