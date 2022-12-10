@@ -18,8 +18,11 @@ export abstract class Day {
 
     async readEntries() {
         this.entries = await this.processLines(
-            path.resolve(this.basePath(), this.isTest ? `${this.basePath()}/test.txt` : `${this.basePath()}/input.txt`),
+            path.resolve(this.basePath(), this.isTest ? `${this.basePath()}/${this.testFile()}` : `${this.basePath()}/input.txt`),
             this.lineParser());
+    }
+    testFile() {
+        return 'test.txt'
     }
 
     abstract basePath(): string;
